@@ -1,7 +1,9 @@
 require 'spec_helper'
 
+
 describe OMDB::Gateway do
-  describe "With invalid Endpoint URI" do
+  describe "With invalid Endpoint URI",
+           :vcr => {:cassette_name => "funkyfunky", :record => :new_episodes} do
     let(:gateway) { OMDB.gateway('funkyfunky') }
 
     it 'should have the correct API endpoint' do
@@ -26,7 +28,9 @@ describe OMDB::Gateway do
     end
   end
 
-  describe "With invalid Endpoint URI" do
+
+  describe "With invalid Endpoint URI",
+           :vcr => {:cassette_name => "lkajsdakkajsdalskjdaasddsad.com", :record => :new_episodes} do
     let(:gateway) { OMDB.gateway('http://lkajsdakkajsdalskjdaasddsad.com') }
 
     it 'should have the correct API endpoint' do
@@ -53,7 +57,9 @@ describe OMDB::Gateway do
     end
   end
 
-  describe "With Valid Endpoint" do
+
+  describe "With Valid Endpoint",
+           :vcr => {:cassette_name => "omdbapi.com", :record => :new_episodes} do
     let(:gateway) { OMDB.gateway }
 
     it 'should have the correct API endpoint' do

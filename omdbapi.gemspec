@@ -22,6 +22,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "simplecov"
+  spec.add_development_dependency "vcr"
+  spec.add_development_dependency "webmock"
+
   spec.add_dependency 'httparty', '0.11.0'
   spec.add_dependency 'faraday', ['>= 0.7.4', '< 0.9']
   spec.add_dependency "faraday_middleware"

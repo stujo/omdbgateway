@@ -1,0 +1,584 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://omdbapi.com/?t=Star%20Wars
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - text/html; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Thu, 17 Apr 2014 21:46:58 GMT
+      Content-Length:
+      - '417'
+    body:
+      encoding: UTF-8
+      string: "{\"Title\":\"Star Wars\",\"Year\":\"1983\",\"Rated\":\"N/A\",\"Released\":\"01
+        May 1983\",\"Runtime\":\"N/A\",\"Genre\":\"Action, Adventure, Sci-Fi\",\"Director\":\"N/A\",\"Writer\":\"N/A\",\"Actors\":\"Harrison
+        Ford, Alec Guinness, Mark Hamill, James Earl Jones\",\"Plot\":\"N/A\",\"Language\":\"English\",\"Country\":\"USA\",\"Awards\":\"N/A\",\"Poster\":\"N/A\",\"Metascore\":\"N/A\",\"imdbRating\":\"7.3\",\"imdbVotes\":\"292\",\"imdbID\":\"tt0251413\",\"Type\":\"game\",\"Response\":\"True\"}"
+    http_version: 
+  recorded_at: Thu, 17 Apr 2014 21:47:04 GMT
+- request:
+    method: get
+    uri: http://omdbapi.com/?t=True%20Grit
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - text/html; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Thu, 17 Apr 2014 21:49:41 GMT
+      Content-Length:
+      - '737'
+    body:
+      encoding: UTF-8
+      string: "{\"Title\":\"True Grit\",\"Year\":\"2010\",\"Rated\":\"PG-13\",\"Released\":\"22
+        Dec 2010\",\"Runtime\":\"110 min\",\"Genre\":\"Adventure, Drama, Western\",\"Director\":\"Ethan
+        Coen, Joel Coen\",\"Writer\":\"Joel Coen (screenplay), Ethan Coen (screenplay),
+        Charles Portis (novel)\",\"Actors\":\"Jeff Bridges, Hailee Steinfeld, Matt
+        Damon, Josh Brolin\",\"Plot\":\"A tough U.S. Marshal helps a stubborn young
+        woman track down her father's murderer.\",\"Language\":\"English\",\"Country\":\"USA\",\"Awards\":\"Nominated
+        for 10 Oscars. Another 31 wins & 85 nominations.\",\"Poster\":\"http://ia.media-imdb.com/images/M/MV5BMjIxNjAzODQ0N15BMl5BanBnXkFtZTcwODY2MjMyNA@@._V1_SX300.jpg\",\"Metascore\":\"80\",\"imdbRating\":\"7.7\",\"imdbVotes\":\"186,806\",\"imdbID\":\"tt1403865\",\"Type\":\"movie\",\"Response\":\"True\"}"
+    http_version: 
+  recorded_at: Thu, 17 Apr 2014 21:49:46 GMT
+- request:
+    method: get
+    uri: http://omdbapi.com/?t=True%20Grit&y=1969
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - text/html; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Thu, 17 Apr 2014 21:49:41 GMT
+      Content-Length:
+      - '745'
+    body:
+      encoding: UTF-8
+      string: "{\"Title\":\"True Grit\",\"Year\":\"1969\",\"Rated\":\"N/A\",\"Released\":\"11
+        Jun 1969\",\"Runtime\":\"128 min\",\"Genre\":\"Adventure, Western, Drama\",\"Director\":\"Henry
+        Hathaway\",\"Writer\":\"Charles Portis (novel), Marguerite Roberts (screenplay)\",\"Actors\":\"John
+        Wayne, Glen Campbell, Kim Darby, Jeremy Slate\",\"Plot\":\"A drunken, hard-nosed
+        U.S. Marshal and a Texas Ranger help a stubborn young woman track down her
+        father's murderer in Indian territory.\",\"Language\":\"English\",\"Country\":\"USA\",\"Awards\":\"Won
+        1 Oscar. Another 7 wins & 5 nominations.\",\"Poster\":\"http://ia.media-imdb.com/images/M/MV5BMTYwNTE3NDYzOV5BMl5BanBnXkFtZTcwNTU5MzY0MQ@@._V1_SX300.jpg\",\"Metascore\":\"N/A\",\"imdbRating\":\"7.4\",\"imdbVotes\":\"26,792\",\"imdbID\":\"tt0065126\",\"Type\":\"movie\",\"Response\":\"True\"}"
+    http_version: 
+  recorded_at: Thu, 17 Apr 2014 21:49:47 GMT
+- request:
+    method: get
+    uri: http://omdbapi.com/?t=Game%20of%20Thrones
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - text/html; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Thu, 17 Apr 2014 21:49:41 GMT
+      Content-Length:
+      - '693'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJUaXRsZSI6IkdhbWUgb2YgVGhyb25lcyIsIlllYXIiOiIyMDEx4oCTIiwi
+        UmF0ZWQiOiJUVi1NQSIsIlJlbGVhc2VkIjoiMTcgQXByIDIwMTEiLCJSdW50
+        aW1lIjoiNjAgbWluIiwiR2VucmUiOiJBZHZlbnR1cmUsIERyYW1hLCBGYW50
+        YXN5IiwiRGlyZWN0b3IiOiJOL0EiLCJXcml0ZXIiOiJEYXZpZCBCZW5pb2Zm
+        LCBELkIuIFdlaXNzIiwiQWN0b3JzIjoiUGV0ZXIgRGlua2xhZ2UsIExlbmEg
+        SGVhZGV5LCBNYWlzaWUgV2lsbGlhbXMsIEVtaWxpYSBDbGFya2UiLCJQbG90
+        IjoiU2V2ZW4gbm9ibGUgZmFtaWxpZXMgZmlnaHQgZm9yIGNvbnRyb2wgb2Yg
+        dGhlIG15dGhpY2FsIGxhbmQgb2YgV2VzdGVyb3MuIiwiTGFuZ3VhZ2UiOiJF
+        bmdsaXNoLCBHZXJtYW4sIFNwYW5pc2giLCJDb3VudHJ5IjoiVVNBLCBVSyIs
+        IkF3YXJkcyI6IldvbiAxIEdvbGRlbiBHbG9iZS4gQW5vdGhlciA1MyB3aW5z
+        ICYgMTA1IG5vbWluYXRpb25zLiIsIlBvc3RlciI6Imh0dHA6Ly9pYS5tZWRp
+        YS1pbWRiLmNvbS9pbWFnZXMvTS9NVjVCTVRrME5EZzROalE1TjE1Qk1sNUJh
+        bkJuWGtGdFpUZ3dNemt6TlRneU1URUAuX1YxX1NYMzAwLmpwZyIsIk1ldGFz
+        Y29yZSI6Ik4vQSIsImltZGJSYXRpbmciOiI5LjUiLCJpbWRiVm90ZXMiOiI1
+        MjksNDgyIiwiaW1kYklEIjoidHQwOTQ0OTQ3IiwiVHlwZSI6InNlcmllcyIs
+        IlJlc3BvbnNlIjoiVHJ1ZSJ9
+    http_version: 
+  recorded_at: Thu, 17 Apr 2014 21:49:47 GMT
+- request:
+    method: get
+    uri: http://omdbapi.com/?plot=full&t=Game%20of%20Thrones
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - text/html; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Thu, 17 Apr 2014 21:49:41 GMT
+      Content-Length:
+      - '1588'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJUaXRsZSI6IkdhbWUgb2YgVGhyb25lcyIsIlllYXIiOiIyMDEx4oCTIiwi
+        UmF0ZWQiOiJUVi1NQSIsIlJlbGVhc2VkIjoiMTcgQXByIDIwMTEiLCJSdW50
+        aW1lIjoiNjAgbWluIiwiR2VucmUiOiJBZHZlbnR1cmUsIERyYW1hLCBGYW50
+        YXN5IiwiRGlyZWN0b3IiOiJOL0EiLCJXcml0ZXIiOiJEYXZpZCBCZW5pb2Zm
+        LCBELkIuIFdlaXNzIiwiQWN0b3JzIjoiUGV0ZXIgRGlua2xhZ2UsIExlbmEg
+        SGVhZGV5LCBNYWlzaWUgV2lsbGlhbXMsIEVtaWxpYSBDbGFya2UiLCJQbG90
+        IjoiTmluZSBub2JsZSBmYW1pbGllcyBmaWdodCBmb3IgY29udHJvbCBvZiB0
+        aGUgbXl0aGljYWwgbGFuZCBvZiBXZXN0ZXJvcy4gUG9saXRpY2FsIGFuZCBz
+        ZXh1YWwgaW50cmlndWUgaXMgcGVydmFzaXZlLiBSb2JlcnQgQmFyYXRoZW9u
+        LCBLaW5nIG9mIFdlc3Rlcm9zLCBhc2tzIGhpcyBvbGQgZnJpZW5kIEVkZGFy
+        ZCwgTG9yZCBTdGFyaywgdG8gc2VydmUgYXMgSGFuZCBvZiB0aGUgS2luZywg
+        b3IgaGlnaGVzdCBvZmZpY2lhbC4gU2VjcmV0bHkgd2FybmVkIHRoYXQgdGhl
+        IHByZXZpb3VzIEhhbmQgd2FzIGFzc2Fzc2luYXRlZCwgRWRkYXJkIGFjY2Vw
+        dHMgaW4gb3JkZXIgdG8gaW52ZXN0aWdhdGUgZnVydGhlci4gTWVhbndoaWxl
+        IHRoZSBRdWVlbidzIGZhbWlseSwgdGhlIExhbm5pc3RlcnMsIG1heSBiZSBo
+        YXRjaGluZyBhIHBsb3QgdG8gdGFrZSBwb3dlci4gQWNyb3NzIHRoZSBzZWEs
+        IHRoZSBsYXN0IG1lbWJlcnMgb2YgdGhlIHByZXZpb3VzIGFuZCBkZXBvc2Vk
+        IHJ1bGluZyBmYW1pbHksIHRoZSBUYXJnYXJ5ZW5zLCBhcmUgYWxzbyBzY2hl
+        bWluZyB0byByZWdhaW4gdGhlIHRocm9uZS4gVGhlIGZyaWN0aW9uIGJldHdl
+        ZW4gdGhlIGhvdXNlcyBTdGFyaywgTGFubmlzdGVyLCBCYXJhdGhlb24gYW5k
+        IFRhcmdhcnllbiBhbmQgd2l0aCB0aGUgcmVtYWluaW5nIGdyZWF0IGhvdXNl
+        cyBHcmV5am95LCBUdWxseSwgQXJyeW4sVHlyZWxsIGFuZCBNYXJ0ZWxsIGxl
+        YWRzIHRvIGZ1bGwtc2NhbGUgd2FyLiBBbGwgd2hpbGUgYSB2ZXJ5IGFuY2ll
+        bnQgZXZpbCBhd2FrZW5zIGluIHRoZSBmYXJ0aGVzdCBub3J0aC4gQW1pZHN0
+        IHRoZSB3YXIgYW5kIHBvbGl0aWNhbCBjb25mdXNpb24sIGEgbmVnbGVjdGVk
+        IG1pbGl0YXJ5IG9yZGVyIG9mIG1pc2ZpdHMsIHRoZSBOaWdodCdzIFdhdGNo
+        LCBpcyBhbGwgdGhhdCBzdGFuZHMgYmV0d2VlbiB0aGUgcmVhbG1zIG9mIG1l
+        biBhbmQgaWN5IGhvcnJvcnMgYmV5b25kLiIsIkxhbmd1YWdlIjoiRW5nbGlz
+        aCwgR2VybWFuLCBTcGFuaXNoIiwiQ291bnRyeSI6IlVTQSwgVUsiLCJBd2Fy
+        ZHMiOiJXb24gMSBHb2xkZW4gR2xvYmUuIEFub3RoZXIgNTMgd2lucyAmIDEw
+        NSBub21pbmF0aW9ucy4iLCJQb3N0ZXIiOiJodHRwOi8vaWEubWVkaWEtaW1k
+        Yi5jb20vaW1hZ2VzL00vTVY1Qk1UazBORGc0TmpRNU4xNUJNbDVCYW5Cblhr
+        RnRaVGd3TXprek5UZ3lNVEVALl9WMV9TWDMwMC5qcGciLCJNZXRhc2NvcmUi
+        OiJOL0EiLCJpbWRiUmF0aW5nIjoiOS41IiwiaW1kYlZvdGVzIjoiNTI5LDQ4
+        MiIsImltZGJJRCI6InR0MDk0NDk0NyIsIlR5cGUiOiJzZXJpZXMiLCJSZXNw
+        b25zZSI6IlRydWUifQ==
+    http_version: 
+  recorded_at: Thu, 17 Apr 2014 21:49:47 GMT
+- request:
+    method: get
+    uri: http://omdbapi.com/?t=lsdfoweirjrpwef323423dsfkip
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - text/html; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Thu, 17 Apr 2014 21:49:42 GMT
+      Content-Length:
+      - '47'
+    body:
+      encoding: UTF-8
+      string: "{\"Response\":\"False\",\"Error\":\"Movie not found!\"}"
+    http_version: 
+  recorded_at: Thu, 17 Apr 2014 21:49:47 GMT
+- request:
+    method: get
+    uri: http://omdbapi.com/?i=tt0411008
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - text/html; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Thu, 17 Apr 2014 21:49:42 GMT
+      Content-Length:
+      - '832'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJUaXRsZSI6Ikxvc3QiLCJZZWFyIjoiMjAwNOKAkzIwMTAiLCJSYXRlZCI6
+        IlRWLTE0IiwiUmVsZWFzZWQiOiIyMiBTZXAgMjAwNCIsIlJ1bnRpbWUiOiI0
+        MiBtaW4iLCJHZW5yZSI6IkFkdmVudHVyZSwgRHJhbWEsIEZhbnRhc3kiLCJE
+        aXJlY3RvciI6Ik4vQSIsIldyaXRlciI6IkouSi4gQWJyYW1zLCBKZWZmcmV5
+        IExpZWJlciwgRGFtb24gTGluZGVsb2YiLCJBY3RvcnMiOiJKb3JnZSBHYXJj
+        aWEsIE5hdmVlbiBBbmRyZXdzLCBNYXR0aGV3IEZveCwgSm9zaCBIb2xsb3dh
+        eSIsIlBsb3QiOiJUaGUgc3Vydml2b3JzIG9mIGEgcGxhbmUgY3Jhc2ggYXJl
+        IGZvcmNlZCB0byBsaXZlIHdpdGggZWFjaCBvdGhlciBvbiBhIHJlbW90ZSBp
+        c2xhbmQsIGEgZGFuZ2Vyb3VzIG5ldyB3b3JsZCB0aGF0IHBvc2VzIHVuaXF1
+        ZSB0aHJlYXRzIG9mIGl0cyBvd24uIiwiTGFuZ3VhZ2UiOiJFbmdsaXNoLCBQ
+        b3J0dWd1ZXNlLCBTcGFuaXNoLCBBcmFiaWMsIEZyZW5jaCwgS29yZWFuLCBH
+        ZXJtYW4sIExhdGluLCBSdXNzaWFuLCBKYXBhbmVzZSIsIkNvdW50cnkiOiJV
+        U0EiLCJBd2FyZHMiOiJXb24gMSBHb2xkZW4gR2xvYmUuIEFub3RoZXIgNjEg
+        d2lucyAmIDI2MyBub21pbmF0aW9ucy4iLCJQb3N0ZXIiOiJodHRwOi8vaWEu
+        bWVkaWEtaW1kYi5jb20vaW1hZ2VzL00vTVY1Qk1qQTNOek15TXpVMU1WNUJN
+        bDVCYW5CblhrRnRaVGN3TmpjMU9EVXdNZ0BALl9WMV9TWDMwMC5qcGciLCJN
+        ZXRhc2NvcmUiOiJOL0EiLCJpbWRiUmF0aW5nIjoiOC42IiwiaW1kYlZvdGVz
+        IjoiMjcxLDg0MiIsImltZGJJRCI6InR0MDQxMTAwOCIsIlR5cGUiOiJzZXJp
+        ZXMiLCJSZXNwb25zZSI6IlRydWUifQ==
+    http_version: 
+  recorded_at: Thu, 17 Apr 2014 21:49:47 GMT
+- request:
+    method: get
+    uri: http://omdbapi.com/?i=tt1231230123
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - text/html; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Thu, 17 Apr 2014 21:49:42 GMT
+      Content-Length:
+      - '48'
+    body:
+      encoding: UTF-8
+      string: "{\"Response\":\"False\",\"Error\":\"Incorrect IMDb ID\"}"
+    http_version: 
+  recorded_at: Thu, 17 Apr 2014 21:49:47 GMT
+- request:
+    method: get
+    uri: http://omdbapi.com/?s=Star%20Wars
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - text/html; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Thu, 17 Apr 2014 21:49:42 GMT
+      Content-Length:
+      - '1009'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJTZWFyY2giOlt7IlRpdGxlIjoiU3RhciBXYXJzOiBFcGlzb2RlIElWIC0g
+        QSBOZXcgSG9wZSIsIlllYXIiOiIxOTc3IiwiaW1kYklEIjoidHQwMDc2NzU5
+        IiwiVHlwZSI6Im1vdmllIn0seyJUaXRsZSI6IlN0YXIgV2FyczogRXBpc29k
+        ZSBWIC0gVGhlIEVtcGlyZSBTdHJpa2VzIEJhY2siLCJZZWFyIjoiMTk4MCIs
+        ImltZGJJRCI6InR0MDA4MDY4NCIsIlR5cGUiOiJtb3ZpZSJ9LHsiVGl0bGUi
+        OiJTdGFyIFdhcnM6IEVwaXNvZGUgVkkgLSBSZXR1cm4gb2YgdGhlIEplZGki
+        LCJZZWFyIjoiMTk4MyIsImltZGJJRCI6InR0MDA4NjE5MCIsIlR5cGUiOiJt
+        b3ZpZSJ9LHsiVGl0bGUiOiJTdGFyIFdhcnM6IEVwaXNvZGUgSSAtIFRoZSBQ
+        aGFudG9tIE1lbmFjZSIsIlllYXIiOiIxOTk5IiwiaW1kYklEIjoidHQwMTIw
+        OTE1IiwiVHlwZSI6Im1vdmllIn0seyJUaXRsZSI6IlN0YXIgV2FyczogRXBp
+        c29kZSBJSUkgLSBSZXZlbmdlIG9mIHRoZSBTaXRoIiwiWWVhciI6IjIwMDUi
+        LCJpbWRiSUQiOiJ0dDAxMjE3NjYiLCJUeXBlIjoibW92aWUifSx7IlRpdGxl
+        IjoiU3RhciBXYXJzOiBFcGlzb2RlIElJIC0gQXR0YWNrIG9mIHRoZSBDbG9u
+        ZXMiLCJZZWFyIjoiMjAwMiIsImltZGJJRCI6InR0MDEyMTc2NSIsIlR5cGUi
+        OiJtb3ZpZSJ9LHsiVGl0bGUiOiJTdGFyIFdhcnM6IFRoZSBDbG9uZSBXYXJz
+        IiwiWWVhciI6IjIwMDgiLCJpbWRiSUQiOiJ0dDExODU4MzQiLCJUeXBlIjoi
+        bW92aWUifSx7IlRpdGxlIjoiU3RhciBXYXJzOiBUaGUgQ2xvbmUgV2FycyIs
+        IlllYXIiOiIyMDA44oCTMjAxNCIsImltZGJJRCI6InR0MDQ1ODI5MCIsIlR5
+        cGUiOiJzZXJpZXMifSx7IlRpdGxlIjoiU3RhciBXYXJzOiBDbG9uZSBXYXJz
+        IiwiWWVhciI6IjIwMDPigJMyMDA1IiwiaW1kYklEIjoidHQwMzYxMjQzIiwi
+        VHlwZSI6InNlcmllcyJ9LHsiVGl0bGUiOiJUaGUgU3RhciBXYXJzIEhvbGlk
+        YXkgU3BlY2lhbCIsIlllYXIiOiIxOTc4IiwiaW1kYklEIjoidHQwMTkzNTI0
+        IiwiVHlwZSI6Im1vdmllIn1dfQ==
+    http_version: 
+  recorded_at: Thu, 17 Apr 2014 21:49:48 GMT
+- request:
+    method: get
+    uri: http://omdbapi.com/?s=Star%20Wars:%20Episode%20VI%20-%20Return%20of%20the%20Jedi
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - text/html; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Thu, 17 Apr 2014 21:49:42 GMT
+      Content-Length:
+      - '117'
+    body:
+      encoding: UTF-8
+      string: "{\"Search\":[{\"Title\":\"Star Wars: Episode VI - Return of the Jedi\",\"Year\":\"1983\",\"imdbID\":\"tt0086190\",\"Type\":\"movie\"}]}"
+    http_version: 
+  recorded_at: Thu, 17 Apr 2014 21:49:48 GMT
+- request:
+    method: get
+    uri: http://omdbapi.com/?s=lsdfoweirjrpwef323423dsfkip
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - text/html; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Thu, 17 Apr 2014 21:49:42 GMT
+      Content-Length:
+      - '47'
+    body:
+      encoding: UTF-8
+      string: "{\"Response\":\"False\",\"Error\":\"Movie not found!\"}"
+    http_version: 
+  recorded_at: Thu, 17 Apr 2014 21:49:48 GMT
+recorded_with: VCR 2.9.0
