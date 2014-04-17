@@ -2,7 +2,7 @@ require 'httparty'
 require 'json'
 require 'omdbapi/version'
 require 'omdbapi/default'
-require 'omdbapi/client'
+require 'omdbapi/gateway'
 
 # Ruby wrapper for omdbapi.com API.
 module OMDB
