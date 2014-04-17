@@ -40,25 +40,43 @@ module OMDB
         http_success? && app_success?
       end
 
-      def element tag, default = nil
-        if success? && body.instance_of?(Hash) && body.key?(tag)
-          body[tag]
+      def as_hash
+        if success? && @body.instance_of?(Hash)
+          @body
         else
-          default
+          {}
         end
       end
 
-      def length
-        if success? && body.instance_of?(Array) && !body.empty?
-          body.length
+      def as_array
+        if success? && @body.instance_of?(Array)
+          @body
         else
-          0
+          []
         end
       end
 
-      def first default = nil
-        if success? && body.instance_of?(Array) && !body.empty?
-          body[0]
+      def prune_hash tag, default = nil
+        if as_hash.has_key? tag
+          @body = as_hash[tag]
+        else
+          @body = default
+        end
+        self
+      end
+
+      def prune_array index, default = nil
+        if as_array.length > index
+          @body = as_array[index]
+        else
+          @body = default
+        end
+        self
+      end
+
+      def array_first default = nil
+        if !as_array.empty?
+          as_array[0]
         else
           default
         end
@@ -92,6 +110,18 @@ module OMDB
       end
     end
 
+    def get url, &block
+      begin
+        response = @conn.get do |req|
+          req.url url
+          yield req if block_given?
+        end
+      rescue URI::BadURIError => e
+        response = ResponseWrapper.new(nil, 500, "BadURIError: #{e}")
+      end
+      response
+    end
+
 
     # Retrieves a movie or show based on its title.
     #
@@ -102,8 +132,7 @@ module OMDB
     # @example
     #   title_search('Game of Thrones')
     def title_search(title, year = nil, plot = nil)
-      response = @conn.get do |req|
-        req.url '/'
+      response = get '/' do |req|
         req.params = {t: title}
         req.params[:plot] = plot unless plot.nil?
         req.params[:y] = year unless year.nil?
@@ -119,11 +148,10 @@ module OMDB
     # @example
     #   free_search('Game')
     def free_search(q)
-      response = @conn.get do |req|
-        req.url '/'
+      response = get '/' do |req|
         req.params = {s: q}
       end
-      response.element('Search', [])
+      response.prune_hash('Search', [])
     end
 
 
@@ -134,8 +162,7 @@ module OMDB
     # @example
     #   find_by_id('tt0944947')
     def find_by_id(imdb_id)
-      response = @conn.get do |req|
-        req.url '/'
+      response = get '/' do |req|
         req.params = {i: imdb_id}
       end
       response
