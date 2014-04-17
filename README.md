@@ -1,5 +1,6 @@
 # omdbgateway
 
+[![Gem Version](https://badge.fury.io/rb/omdbgateway.svg)](http://badge.fury.io/rb/omdbgateway)
 
 OMDBGateway is not a supported Gem at this time
 
