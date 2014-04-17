@@ -1,18 +1,17 @@
 require 'spec_helper'
 
+module OMDBGateway
 
-module OMDB
+  describe ResponseWrapper do
 
-  describe Gateway::ResponseWrapper do
+    let!(:error_500) { ResponseWrapper.new({'anything' => 'value'}, 500, 'X500 Error') }
+    let!(:empty_array) { ResponseWrapper.new([]) }
+    let!(:array_one_item) { ResponseWrapper.new([{'a' => 'A', 'b' => 'B'}]) }
+    let!(:array_two_item) { ResponseWrapper.new([{'a' => 'A', 'b' => 'B'}, {'c' => 'C', 'd' => 'D'}]) }
 
-    let!(:error_500) { Gateway::ResponseWrapper.new({'anything' => 'value'}, 500, 'X500 Error') }
-    let!(:empty_array) { Gateway::ResponseWrapper.new([]) }
-    let!(:array_one_item) { Gateway::ResponseWrapper.new([{'a' => 'A', 'b' => 'B'}]) }
-    let!(:array_two_item) { Gateway::ResponseWrapper.new([{'a' => 'A', 'b' => 'B'}, {'c' => 'C', 'd' => 'D'}]) }
-
-    let!(:empty_hash) { Gateway::ResponseWrapper.new({}) }
-    let!(:simple_hash) { Gateway::ResponseWrapper.new({'a' => 'A'}) }
-    let!(:app_fail_hash) { Gateway::ResponseWrapper.new({"Response" => "False", "Error" => "App Error"}) }
+    let!(:empty_hash) { ResponseWrapper.new({}) }
+    let!(:simple_hash) { ResponseWrapper.new({'a' => 'A'}) }
+    let!(:app_fail_hash) { ResponseWrapper.new({"Response" => "False", "Error" => "App Error"}) }
 
     describe "#error_message" do
       it "should be nil" do

@@ -1,16 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'omdbapi/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "omdbapi"
-  spec.version       = OMDB::VERSION
-  spec.authors       = ["Casey Scarborough"]
-  spec.email         = ["caseyscarborough@gmail.com"]
-  spec.description   = '[In Progress] A wrapper for the omdbapi.com movie API.'
-  spec.summary       = 'This gem provides easy access for information retrieval from omdbapi.com.'
-  spec.homepage      = "http://caseyscarborough.github.io/omdbapi"
+  spec.name          = "omdbgateway"
+  spec.version       = '0.0.1'
+  spec.authors       = ["Stuart Jones"]
+  spec.email         = ["omdbgateway@skillbox.com"]
+  spec.description   = 'A Service Gateway for the omdbapi.com movie API.'
+  spec.summary       = 'Based on the outline of Casey Scarborough\'s excellent omdbapi gem, I wanted a project practice faraday and ended up with a rewrite, with substantial changes to the API so to avoid confusion I renamed the gem'
+  spec.homepage      = "http://stujo.github.io/omdbgateway"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -25,7 +24,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "vcr"
   spec.add_development_dependency "webmock"
 
-  spec.add_dependency 'httparty', '0.11.0'
   spec.add_dependency 'faraday', ['>= 0.7.4', '< 0.9']
   spec.add_dependency "faraday_middleware"
 end
