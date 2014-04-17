@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["omdbgateway@skillbox.com"]
   spec.description   = 'A Service Gateway for the omdbapi.com movie API.'
   spec.summary       = 'Based on the outline of Casey Scarborough\'s excellent omdbapi gem, I wanted a project practice faraday and ended up with a rewrite, with substantial changes to the API so to avoid confusion I renamed the gem'
-  spec.homepage      = "http://stujo.github.io/omdbgateway"
+  spec.homepage      = "https://github.com/stujo/omdbgateway/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
