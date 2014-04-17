@@ -7,21 +7,15 @@ require 'omdbapi/gateway'
 # Ruby wrapper for omdbapi.com API.
 module OMDB
 
-  class << self
+  @@gateways = {}
 
-    # API client for making calls to the omdbapi API.
-    #
-    # return [OMDB::Client] API Wrapper
-    def client
-      @client = Client.new unless @client
-      @client
-    end
-
-    private
-
-      def method_missing(name, *args, &block)
-        client.send(name, *args, &block)
-      end
-
+  # API Gateway for making calls to the omdbapi API.
+  #
+  # return [OMDB::Gateway] API Gateway
+  def self.gateway endpoint = nil
+    endpoint = OMDB::Default::API_ENDPOINT if endpoint.nil?
+    @@gateways[endpoint] = OMDB::Gateway.new(endpoint) unless @@gateways.key? endpoint
+    @@gateways[endpoint]
   end
 end
+
