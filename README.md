@@ -7,8 +7,24 @@ __Note__ is a faraday rewrite of [Casey Scarborough's omdbapi](https://github.co
 Not that there's anything wrong with what he did, I just wanted to try faraday and we're using OMDB
 in our class
 
-##Usage
 
+#Installation
+
+##Install the gem
+```
+
+gem install omdbgateway
+
+```
+
+##Use it in your gemfile
+```
+gem "omdbgateway"
+
+```
+
+
+#Usage
 
 ##Title Search
 
