@@ -7,12 +7,12 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
+      User-Agent:
+      - Faraday v0.8.9
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
-      User-Agent:
-      - Ruby
   response:
     status:
       code: 200
@@ -35,7 +35,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Thu, 17 Apr 2014 22:35:44 GMT
+      - Fri, 18 Apr 2014 00:44:48 GMT
       Content-Length:
       - '417'
     body:
@@ -44,7 +44,7 @@ http_interactions:
         May 1983\",\"Runtime\":\"N/A\",\"Genre\":\"Action, Adventure, Sci-Fi\",\"Director\":\"N/A\",\"Writer\":\"N/A\",\"Actors\":\"Harrison
         Ford, Alec Guinness, Mark Hamill, James Earl Jones\",\"Plot\":\"N/A\",\"Language\":\"English\",\"Country\":\"USA\",\"Awards\":\"N/A\",\"Poster\":\"N/A\",\"Metascore\":\"N/A\",\"imdbRating\":\"7.3\",\"imdbVotes\":\"292\",\"imdbID\":\"tt0251413\",\"Type\":\"game\",\"Response\":\"True\"}"
     http_version: 
-  recorded_at: Thu, 17 Apr 2014 22:35:47 GMT
+  recorded_at: Fri, 18 Apr 2014 00:44:53 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?t=True%20Grit
@@ -52,12 +52,12 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
+      User-Agent:
+      - Faraday v0.8.9
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
-      User-Agent:
-      - Ruby
   response:
     status:
       code: 200
@@ -80,7 +80,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Thu, 17 Apr 2014 22:35:44 GMT
+      - Fri, 18 Apr 2014 00:44:48 GMT
       Content-Length:
       - '737'
     body:
@@ -93,7 +93,7 @@ http_interactions:
         woman track down her father's murderer.\",\"Language\":\"English\",\"Country\":\"USA\",\"Awards\":\"Nominated
         for 10 Oscars. Another 31 wins & 85 nominations.\",\"Poster\":\"http://ia.media-imdb.com/images/M/MV5BMjIxNjAzODQ0N15BMl5BanBnXkFtZTcwODY2MjMyNA@@._V1_SX300.jpg\",\"Metascore\":\"80\",\"imdbRating\":\"7.7\",\"imdbVotes\":\"186,806\",\"imdbID\":\"tt1403865\",\"Type\":\"movie\",\"Response\":\"True\"}"
     http_version: 
-  recorded_at: Thu, 17 Apr 2014 22:35:47 GMT
+  recorded_at: Fri, 18 Apr 2014 00:44:53 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?t=True%20Grit&y=1969
@@ -101,12 +101,12 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
+      User-Agent:
+      - Faraday v0.8.9
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
-      User-Agent:
-      - Ruby
   response:
     status:
       code: 200
@@ -129,7 +129,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Thu, 17 Apr 2014 22:35:44 GMT
+      - Fri, 18 Apr 2014 00:44:48 GMT
       Content-Length:
       - '745'
     body:
@@ -142,7 +142,7 @@ http_interactions:
         father's murderer in Indian territory.\",\"Language\":\"English\",\"Country\":\"USA\",\"Awards\":\"Won
         1 Oscar. Another 7 wins & 5 nominations.\",\"Poster\":\"http://ia.media-imdb.com/images/M/MV5BMTYwNTE3NDYzOV5BMl5BanBnXkFtZTcwNTU5MzY0MQ@@._V1_SX300.jpg\",\"Metascore\":\"N/A\",\"imdbRating\":\"7.4\",\"imdbVotes\":\"26,792\",\"imdbID\":\"tt0065126\",\"Type\":\"movie\",\"Response\":\"True\"}"
     http_version: 
-  recorded_at: Thu, 17 Apr 2014 22:35:47 GMT
+  recorded_at: Fri, 18 Apr 2014 00:44:53 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?t=Game%20of%20Thrones
@@ -150,12 +150,12 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
+      User-Agent:
+      - Faraday v0.8.9
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
-      User-Agent:
-      - Ruby
   response:
     status:
       code: 200
@@ -178,7 +178,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Thu, 17 Apr 2014 22:35:44 GMT
+      - Fri, 18 Apr 2014 00:44:48 GMT
       Content-Length:
       - '693'
     body:
@@ -201,7 +201,7 @@ http_interactions:
         MjksNDgyIiwiaW1kYklEIjoidHQwOTQ0OTQ3IiwiVHlwZSI6InNlcmllcyIs
         IlJlc3BvbnNlIjoiVHJ1ZSJ9
     http_version: 
-  recorded_at: Thu, 17 Apr 2014 22:35:48 GMT
+  recorded_at: Fri, 18 Apr 2014 00:44:53 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?plot=full&t=Game%20of%20Thrones
@@ -209,12 +209,12 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
+      User-Agent:
+      - Faraday v0.8.9
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
-      User-Agent:
-      - Ruby
   response:
     status:
       code: 200
@@ -237,7 +237,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Thu, 17 Apr 2014 22:35:45 GMT
+      - Fri, 18 Apr 2014 00:44:48 GMT
       Content-Length:
       - '1588'
     body:
@@ -280,7 +280,7 @@ http_interactions:
         MiIsImltZGJJRCI6InR0MDk0NDk0NyIsIlR5cGUiOiJzZXJpZXMiLCJSZXNw
         b25zZSI6IlRydWUifQ==
     http_version: 
-  recorded_at: Thu, 17 Apr 2014 22:35:48 GMT
+  recorded_at: Fri, 18 Apr 2014 00:44:53 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?t=lsdfoweirjrpwef323423dsfkip
@@ -288,12 +288,12 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
+      User-Agent:
+      - Faraday v0.8.9
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
-      User-Agent:
-      - Ruby
   response:
     status:
       code: 200
@@ -316,14 +316,14 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Thu, 17 Apr 2014 22:35:45 GMT
+      - Fri, 18 Apr 2014 00:44:49 GMT
       Content-Length:
       - '47'
     body:
       encoding: UTF-8
       string: "{\"Response\":\"False\",\"Error\":\"Movie not found!\"}"
     http_version: 
-  recorded_at: Thu, 17 Apr 2014 22:35:48 GMT
+  recorded_at: Fri, 18 Apr 2014 00:44:53 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?i=tt0411008
@@ -331,12 +331,12 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
+      User-Agent:
+      - Faraday v0.8.9
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
-      User-Agent:
-      - Ruby
   response:
     status:
       code: 200
@@ -359,7 +359,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Thu, 17 Apr 2014 22:35:45 GMT
+      - Fri, 18 Apr 2014 00:44:49 GMT
       Content-Length:
       - '832'
     body:
@@ -385,7 +385,7 @@ http_interactions:
         IjoiMjcxLDg0MiIsImltZGJJRCI6InR0MDQxMTAwOCIsIlR5cGUiOiJzZXJp
         ZXMiLCJSZXNwb25zZSI6IlRydWUifQ==
     http_version: 
-  recorded_at: Thu, 17 Apr 2014 22:35:48 GMT
+  recorded_at: Fri, 18 Apr 2014 00:44:54 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?i=tt1231230123
@@ -393,12 +393,12 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
+      User-Agent:
+      - Faraday v0.8.9
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
-      User-Agent:
-      - Ruby
   response:
     status:
       code: 200
@@ -421,14 +421,14 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Thu, 17 Apr 2014 22:35:45 GMT
+      - Fri, 18 Apr 2014 00:44:49 GMT
       Content-Length:
       - '48'
     body:
       encoding: UTF-8
       string: "{\"Response\":\"False\",\"Error\":\"Incorrect IMDb ID\"}"
     http_version: 
-  recorded_at: Thu, 17 Apr 2014 22:35:48 GMT
+  recorded_at: Fri, 18 Apr 2014 00:44:54 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?s=Star%20Wars
@@ -436,12 +436,12 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
+      User-Agent:
+      - Faraday v0.8.9
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
-      User-Agent:
-      - Ruby
   response:
     status:
       code: 200
@@ -464,7 +464,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Thu, 17 Apr 2014 22:35:45 GMT
+      - Fri, 18 Apr 2014 00:44:49 GMT
       Content-Length:
       - '1009'
     body:
@@ -494,7 +494,7 @@ http_interactions:
         YXkgU3BlY2lhbCIsIlllYXIiOiIxOTc4IiwiaW1kYklEIjoidHQwMTkzNTI0
         IiwiVHlwZSI6Im1vdmllIn1dfQ==
     http_version: 
-  recorded_at: Thu, 17 Apr 2014 22:35:48 GMT
+  recorded_at: Fri, 18 Apr 2014 00:44:54 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?s=Star%20Wars:%20Episode%20VI%20-%20Return%20of%20the%20Jedi
@@ -502,12 +502,12 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
+      User-Agent:
+      - Faraday v0.8.9
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
-      User-Agent:
-      - Ruby
   response:
     status:
       code: 200
@@ -530,14 +530,14 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Thu, 17 Apr 2014 22:35:46 GMT
+      - Fri, 18 Apr 2014 00:44:49 GMT
       Content-Length:
       - '117'
     body:
       encoding: UTF-8
       string: "{\"Search\":[{\"Title\":\"Star Wars: Episode VI - Return of the Jedi\",\"Year\":\"1983\",\"imdbID\":\"tt0086190\",\"Type\":\"movie\"}]}"
     http_version: 
-  recorded_at: Thu, 17 Apr 2014 22:35:49 GMT
+  recorded_at: Fri, 18 Apr 2014 00:44:54 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?s=lsdfoweirjrpwef323423dsfkip
@@ -545,12 +545,12 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
+      User-Agent:
+      - Faraday v0.8.9
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
-      User-Agent:
-      - Ruby
   response:
     status:
       code: 200
@@ -573,12 +573,12 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Thu, 17 Apr 2014 22:35:46 GMT
+      - Fri, 18 Apr 2014 00:44:49 GMT
       Content-Length:
       - '47'
     body:
       encoding: UTF-8
       string: "{\"Response\":\"False\",\"Error\":\"Movie not found!\"}"
     http_version: 
-  recorded_at: Thu, 17 Apr 2014 22:35:49 GMT
+  recorded_at: Fri, 18 Apr 2014 00:44:54 GMT
 recorded_with: VCR 2.9.0

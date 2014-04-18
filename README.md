@@ -2,6 +2,8 @@
 
 [![Gem Version](https://badge.fury.io/rb/omdbgateway.svg)](http://badge.fury.io/rb/omdbgateway)
 
+[![Build Status](https://travis-ci.org/stujo/omdbgateway.svg?branch=master)](https://travis-ci.org/stujo/omdbgateway)
+
 __Note__ is a faraday rewrite of [Casey Scarborough's omdbapi](https://github.com/caseyscarborough/omdbapi)
 
 Not that there's anything wrong with what he did, I just wanted to try faraday and we're using OMDB

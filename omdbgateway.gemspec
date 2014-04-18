@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "omdbgateway"
-  spec.version       = '0.0.3'
+  spec.version       = '0.0.4'
   spec.authors       = ["Stuart Jones"]
   spec.email         = ["omdbgateway@skillbox.com"]
   spec.description   = 'A simple API Service Gateway for the omdb omdbapi.com movie API. Supporting error handling and result pruning'
@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 2.14"
   spec.add_development_dependency "webmock", "~> 1.17"
 
-  spec.add_dependency 'faraday', "~> 0.8"
-  spec.add_dependency "faraday_middleware", "~> 0.9"
+  spec.add_dependency 'faraday', '~> 0.8.9'
+
+  spec.add_dependency "faraday_middleware", '~> 0.8'
 end
