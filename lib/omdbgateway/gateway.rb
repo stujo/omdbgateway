@@ -1,9 +1,6 @@
 require 'faraday'
 require 'faraday_middleware'
 
-require_relative 'response_wrapper'
-require_relative 'response_patcher'
-
 module OMDBGateway
   # Faraday Based Gateway
   class Gateway

@@ -1,0 +1,90 @@
+Run options: include {:focus=>true}
+
+All examples were filtered out; ignoring {:focus=>true}
+
+OMDBGateway::Gateway
+  With invalid Endpoint URI
+    should have the correct API endpoint
+    with a movie that exists
+      #success
+        should note failure
+      #error_message
+        should note failure
+  With invalid Endpoint URI
+    should have the correct API endpoint
+    with a movie that exists
+      #success
+        should note failure
+      #error_message
+        should note failure
+  With Valid Endpoint
+    should have the correct API endpoint
+    #title_search
+      with a movie that exists
+        should return a hash of movie attributes
+        should contain a title
+      with the year parameter
+        should not be the same title
+      with the plot parameter
+        should have different plots
+      with a movie that doesnt exist
+        should return a hash
+        should return a hash with a false response
+        should return a hash with an error message
+    #find_by_id
+      with a title that exists
+        should return a hash of movie attributes
+        should contain a title
+      with a movie that does not exist
+        should return nil
+    #free_search
+      with search results
+        should return an ResponseWrapper
+        should return an array with hash contents
+      with a single search result
+        should return an array
+        should return an array with 1 element
+        should have a title
+      with no search results
+        should return an ResponseWrapper
+        should show app failed
+
+OMDBGateway::ResponseWrapper
+  #error_message
+    should be nil
+    should be 'X500 Error'
+    should be 'X500 Error'
+  #success?
+    should be true
+    should be true
+    should be false
+  #as_hash
+    should be {}
+    should be {}
+    should be {}
+    should be {'a' => 'A'}
+  #as_hash
+    should be []
+    should be []
+    should be []
+    should be []
+    should be [{'a' => 'A', 'b' => 'B'}]
+  #prune_hash
+    should be nil for empty array
+    should be 5
+    should not expose Error or Report
+    should be return hash element
+    should be nil for any array
+  #prune_array
+    should be nil for empty array
+    should be default 700
+    should not expose Error or Report
+    should not return hash element but the default
+    should be {'a' => 'A', 'b' => 'B'} for any array
+    should be default (500) for out of bound index for any array
+  #array_first
+    should be nil for empty array
+    should be {'a' => 'A', 'b' => 'B'} for any array
+
+Finished in 0.20503 seconds
+52 examples, 0 failures

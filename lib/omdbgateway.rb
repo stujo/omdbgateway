@@ -1,4 +1,6 @@
 require 'omdbgateway/gateway'
+require 'omdbgateway/response_patcher'
+require 'omdbgateway/response_wrapper'
 
 module OMDBGateway
   DEFAULT_API_ENDPOINT = 'http://omdbapi.com'
