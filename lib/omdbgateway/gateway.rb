@@ -42,7 +42,7 @@ module OMDBGateway
     #   title_search('Game of Thrones')
     def title_search(title, year = nil, plot = nil)
       response = get '/' do |req|
-        req.params = {t: title}
+        req.params = {:t => title}
         req.params[:plot] = plot unless plot.nil?
         req.params[:y] = year unless year.nil?
       end
@@ -58,7 +58,7 @@ module OMDBGateway
     #   free_search('Game')
     def free_search(q)
       response = get '/' do |req|
-        req.params = {s: q}
+        req.params = {:s => q}
       end
       response.prune_hash('Search', [])
     end
@@ -72,7 +72,7 @@ module OMDBGateway
     #   find_by_id('tt0944947')
     def find_by_id(imdb_id)
       response = get '/' do |req|
-        req.params = {i: imdb_id}
+        req.params = {:i => imdb_id}
       end
       response
     end
