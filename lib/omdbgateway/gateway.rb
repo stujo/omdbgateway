@@ -34,7 +34,7 @@ module OMDBGateway
     # @param title [String] The title of the movie or show.
     # @param year [String] The year of the movie or show.
     # @param full_plot [Boolean] Full Plot data (default: false)
-    # @return [Hash]
+    # @return [OMDBGateway::ResponseWrapper]
     # @example
     #   title_search('Game of Thrones')
     def title_search(title, year = nil, full_plot = false, tomatoes = false)
@@ -51,7 +51,7 @@ module OMDBGateway
     # Retrieves a movie or show based on its title.
     #
     # @param q [String] The search string
-    # @return [Array of Hashes]
+    # @return [OMDBGateway::ResponseWrapper]
     # @example
     #   free_search('Game')
     def free_search(q)
@@ -66,7 +66,7 @@ module OMDBGateway
     #
     # @param imdb_id [String] The IMDb ID of the movie or show.
     # @param full_plot [Boolean] Full Plot data (default: false)
-    # @return [Hash]
+    # @return [OMDBGateway::ResponseWrapper]
     # @example
     #   find_by_id('tt0944947')
     def find_by_id(imdb_id, full_plot = false, tomatoes = true)
