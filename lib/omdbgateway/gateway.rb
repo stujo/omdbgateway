@@ -29,18 +29,19 @@ module OMDBGateway
     end
 
 
-    # Retrieves a movie or show based on its title.
+    # Retrieves a single movie or show based on its title.
     #
     # @param title [String] The title of the movie or show.
     # @param year [String] The year of the movie or show.
-    # @param plot [String] The plot of the movie or show.
+    # @param full_plot [Boolean] Full Plot data (default: false)
     # @return [Hash]
     # @example
     #   title_search('Game of Thrones')
-    def title_search(title, year = nil, plot = nil)
+    def title_search(title, year = nil, full_plot = false, tomatoes = false)
       response = get '/' do |req|
         req.params = {:t => title}
-        req.params[:plot] = plot unless plot.nil?
+        req.params[:plot] = 'full' if (full_plot == true || 'full' == full_plot)
+        req.params[:tomatoes] = 'true' if tomatoes
         req.params[:y] = year unless year.nil?
       end
       # Middleware creates the Hash
@@ -61,15 +62,18 @@ module OMDBGateway
     end
 
 
-    # Retrieves a movie or show based on its IMDb ID.
+    # Retrieves a single movie or show based on its IMDb ID.
     #
     # @param imdb_id [String] The IMDb ID of the movie or show.
+    # @param full_plot [Boolean] Full Plot data (default: false)
     # @return [Hash]
     # @example
     #   find_by_id('tt0944947')
-    def find_by_id(imdb_id)
+    def find_by_id(imdb_id, full_plot = false, tomatoes = true)
       response = get '/' do |req|
         req.params = {:i => imdb_id}
+        req.params[:plot] = 'full' if (full_plot == true || 'full' == full_plot)
+        req.params[:tomatoes] = 'true' if tomatoes
       end
       response
     end

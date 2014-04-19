@@ -72,6 +72,12 @@ module OMDBGateway
           let(:title_results) do
             gateway.title_search('Star Wars')
           end
+          let(:title_results_with_full_plot) do
+            gateway.title_search('Star Wars',1983,true)
+          end
+          let(:title_results_with_tomatoes) do
+            gateway.title_search('Star Wars',1983,false,true)
+          end
 
           it 'should return a hash of movie attributes' do
             title_results.should be_instance_of ResponseWrapper
@@ -79,6 +85,18 @@ module OMDBGateway
 
           it 'should contain a title' do
             title_results.as_hash['Title'].should be_instance_of String
+          end
+
+          it 'should have tomatoes' do
+            title_results_with_tomatoes.as_hash['tomatoMeter'].should be_instance_of String
+          end
+
+          it 'should contain a not have tomatoes' do
+            title_results.as_hash['tomatoMeter'].should eq nil
+          end
+
+          it 'should have a longer plot' do
+            title_results_with_full_plot.prune_hash('Plot','').body.length.should be >= title_results.prune_hash('Plot','').body.length
           end
         end
 
@@ -93,7 +111,7 @@ module OMDBGateway
 
         describe 'with the plot parameter' do
           let(:title_results1) { gateway.title_search('Game of Thrones') }
-          let(:title_results2) { gateway.title_search('Game of Thrones', nil, 'full') }
+          let(:title_results2) { gateway.title_search('Game of Thrones', nil, true) }
 
           it 'should have different plots' do
             title_results1.as_hash['Plot'].should_not eq(title_results2.as_hash['Plot'])

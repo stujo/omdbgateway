@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "omdbgateway"
-  spec.version       = '0.0.4'
+  spec.version       = '0.1.0'
   spec.authors       = ["Stuart Jones"]
   spec.email         = ["omdbgateway@skillbox.com"]
   spec.description   = 'A simple API Service Gateway for the omdb omdbapi.com movie API. Supporting error handling and result pruning'

@@ -35,7 +35,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Fri, 18 Apr 2014 00:44:48 GMT
+      - Sat, 19 Apr 2014 03:25:11 GMT
       Content-Length:
       - '417'
     body:
@@ -44,7 +44,97 @@ http_interactions:
         May 1983\",\"Runtime\":\"N/A\",\"Genre\":\"Action, Adventure, Sci-Fi\",\"Director\":\"N/A\",\"Writer\":\"N/A\",\"Actors\":\"Harrison
         Ford, Alec Guinness, Mark Hamill, James Earl Jones\",\"Plot\":\"N/A\",\"Language\":\"English\",\"Country\":\"USA\",\"Awards\":\"N/A\",\"Poster\":\"N/A\",\"Metascore\":\"N/A\",\"imdbRating\":\"7.3\",\"imdbVotes\":\"292\",\"imdbID\":\"tt0251413\",\"Type\":\"game\",\"Response\":\"True\"}"
     http_version: 
-  recorded_at: Fri, 18 Apr 2014 00:44:53 GMT
+  recorded_at: Sat, 19 Apr 2014 03:25:15 GMT
+- request:
+    method: get
+    uri: http://omdbapi.com/?t=Star%20Wars&tomatoes=true&y=1983
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.9
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - text/html; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Sat, 19 Apr 2014 03:25:12 GMT
+      Content-Length:
+      - '705'
+    body:
+      encoding: UTF-8
+      string: "{\"Title\":\"Star Wars\",\"Year\":\"1983\",\"Rated\":\"N/A\",\"Released\":\"01
+        May 1983\",\"Runtime\":\"N/A\",\"Genre\":\"Action, Adventure, Sci-Fi\",\"Director\":\"N/A\",\"Writer\":\"N/A\",\"Actors\":\"Harrison
+        Ford, Alec Guinness, Mark Hamill, James Earl Jones\",\"Plot\":\"N/A\",\"Language\":\"English\",\"Country\":\"USA\",\"Awards\":\"N/A\",\"Poster\":\"N/A\",\"Metascore\":\"N/A\",\"imdbRating\":\"7.3\",\"imdbVotes\":\"292\",\"imdbID\":\"tt0251413\",\"Type\":\"game\",\"tomatoMeter\":\"N/A\",\"tomatoImage\":\"N/A\",\"tomatoRating\":\"N/A\",\"tomatoReviews\":\"N/A\",\"tomatoFresh\":\"N/A\",\"tomatoRotten\":\"N/A\",\"tomatoConsensus\":\"N/A\",\"tomatoUserMeter\":\"N/A\",\"tomatoUserRating\":\"N/A\",\"tomatoUserReviews\":\"N/A\",\"DVD\":\"N/A\",\"BoxOffice\":\"N/A\",\"Production\":\"N/A\",\"Website\":\"N/A\",\"Response\":\"True\"}"
+    http_version: 
+  recorded_at: Sat, 19 Apr 2014 03:25:15 GMT
+- request:
+    method: get
+    uri: http://omdbapi.com/?plot=full&t=Star%20Wars&y=1983
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.9
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - text/html; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Date:
+      - Sat, 19 Apr 2014 03:25:12 GMT
+      Content-Length:
+      - '417'
+    body:
+      encoding: UTF-8
+      string: "{\"Title\":\"Star Wars\",\"Year\":\"1983\",\"Rated\":\"N/A\",\"Released\":\"01
+        May 1983\",\"Runtime\":\"N/A\",\"Genre\":\"Action, Adventure, Sci-Fi\",\"Director\":\"N/A\",\"Writer\":\"N/A\",\"Actors\":\"Harrison
+        Ford, Alec Guinness, Mark Hamill, James Earl Jones\",\"Plot\":\"N/A\",\"Language\":\"English\",\"Country\":\"USA\",\"Awards\":\"N/A\",\"Poster\":\"N/A\",\"Metascore\":\"N/A\",\"imdbRating\":\"7.3\",\"imdbVotes\":\"292\",\"imdbID\":\"tt0251413\",\"Type\":\"game\",\"Response\":\"True\"}"
+    http_version: 
+  recorded_at: Sat, 19 Apr 2014 03:25:16 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?t=True%20Grit
@@ -80,7 +170,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Fri, 18 Apr 2014 00:44:48 GMT
+      - Sat, 19 Apr 2014 03:25:12 GMT
       Content-Length:
       - '737'
     body:
@@ -93,7 +183,7 @@ http_interactions:
         woman track down her father's murderer.\",\"Language\":\"English\",\"Country\":\"USA\",\"Awards\":\"Nominated
         for 10 Oscars. Another 31 wins & 85 nominations.\",\"Poster\":\"http://ia.media-imdb.com/images/M/MV5BMjIxNjAzODQ0N15BMl5BanBnXkFtZTcwODY2MjMyNA@@._V1_SX300.jpg\",\"Metascore\":\"80\",\"imdbRating\":\"7.7\",\"imdbVotes\":\"186,806\",\"imdbID\":\"tt1403865\",\"Type\":\"movie\",\"Response\":\"True\"}"
     http_version: 
-  recorded_at: Fri, 18 Apr 2014 00:44:53 GMT
+  recorded_at: Sat, 19 Apr 2014 03:25:16 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?t=True%20Grit&y=1969
@@ -129,7 +219,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Fri, 18 Apr 2014 00:44:48 GMT
+      - Sat, 19 Apr 2014 03:25:12 GMT
       Content-Length:
       - '745'
     body:
@@ -142,7 +232,7 @@ http_interactions:
         father's murderer in Indian territory.\",\"Language\":\"English\",\"Country\":\"USA\",\"Awards\":\"Won
         1 Oscar. Another 7 wins & 5 nominations.\",\"Poster\":\"http://ia.media-imdb.com/images/M/MV5BMTYwNTE3NDYzOV5BMl5BanBnXkFtZTcwNTU5MzY0MQ@@._V1_SX300.jpg\",\"Metascore\":\"N/A\",\"imdbRating\":\"7.4\",\"imdbVotes\":\"26,792\",\"imdbID\":\"tt0065126\",\"Type\":\"movie\",\"Response\":\"True\"}"
     http_version: 
-  recorded_at: Fri, 18 Apr 2014 00:44:53 GMT
+  recorded_at: Sat, 19 Apr 2014 03:25:16 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?t=Game%20of%20Thrones
@@ -178,7 +268,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Fri, 18 Apr 2014 00:44:48 GMT
+      - Sat, 19 Apr 2014 03:25:13 GMT
       Content-Length:
       - '693'
     body:
@@ -201,7 +291,7 @@ http_interactions:
         MjksNDgyIiwiaW1kYklEIjoidHQwOTQ0OTQ3IiwiVHlwZSI6InNlcmllcyIs
         IlJlc3BvbnNlIjoiVHJ1ZSJ9
     http_version: 
-  recorded_at: Fri, 18 Apr 2014 00:44:53 GMT
+  recorded_at: Sat, 19 Apr 2014 03:25:17 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?plot=full&t=Game%20of%20Thrones
@@ -237,7 +327,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Fri, 18 Apr 2014 00:44:48 GMT
+      - Sat, 19 Apr 2014 03:25:14 GMT
       Content-Length:
       - '1588'
     body:
@@ -280,7 +370,7 @@ http_interactions:
         MiIsImltZGJJRCI6InR0MDk0NDk0NyIsIlR5cGUiOiJzZXJpZXMiLCJSZXNw
         b25zZSI6IlRydWUifQ==
     http_version: 
-  recorded_at: Fri, 18 Apr 2014 00:44:53 GMT
+  recorded_at: Sat, 19 Apr 2014 03:25:18 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?t=lsdfoweirjrpwef323423dsfkip
@@ -316,17 +406,17 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Fri, 18 Apr 2014 00:44:49 GMT
+      - Sat, 19 Apr 2014 03:25:14 GMT
       Content-Length:
       - '47'
     body:
       encoding: UTF-8
       string: "{\"Response\":\"False\",\"Error\":\"Movie not found!\"}"
     http_version: 
-  recorded_at: Fri, 18 Apr 2014 00:44:53 GMT
+  recorded_at: Sat, 19 Apr 2014 03:25:18 GMT
 - request:
     method: get
-    uri: http://omdbapi.com/?i=tt0411008
+    uri: http://omdbapi.com/?i=tt0411008&tomatoes=true
     body:
       encoding: US-ASCII
       string: ''
@@ -359,9 +449,9 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Fri, 18 Apr 2014 00:44:49 GMT
+      - Sat, 19 Apr 2014 03:25:15 GMT
       Content-Length:
-      - '832'
+      - '1172'
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -383,12 +473,20 @@ http_interactions:
         bDVCYW5CblhrRnRaVGN3TmpjMU9EVXdNZ0BALl9WMV9TWDMwMC5qcGciLCJN
         ZXRhc2NvcmUiOiJOL0EiLCJpbWRiUmF0aW5nIjoiOC42IiwiaW1kYlZvdGVz
         IjoiMjcxLDg0MiIsImltZGJJRCI6InR0MDQxMTAwOCIsIlR5cGUiOiJzZXJp
-        ZXMiLCJSZXNwb25zZSI6IlRydWUifQ==
+        ZXMiLCJ0b21hdG9NZXRlciI6IjgwIiwidG9tYXRvSW1hZ2UiOiJmcmVzaCIs
+        InRvbWF0b1JhdGluZyI6IjYuMiIsInRvbWF0b1Jldmlld3MiOiI1IiwidG9t
+        YXRvRnJlc2giOiI0IiwidG9tYXRvUm90dGVuIjoiMSIsInRvbWF0b0NvbnNl
+        bnN1cyI6Ik4vQSIsInRvbWF0b1VzZXJNZXRlciI6IjcyIiwidG9tYXRvVXNl
+        clJhdGluZyI6IjMuNyIsInRvbWF0b1VzZXJSZXZpZXdzIjoiNCwyOTgiLCJE
+        VkQiOiIxNCBNYXIgMjAwNiIsIkJveE9mZmljZSI6Ik4vQSIsIlByb2R1Y3Rp
+        b24iOiJTaWx2ZXJDcmVzdCBFbnRlcnRhaW5tZW50IiwiV2Vic2l0ZSI6Imh0
+        dHA6Ly93d3cubG9zdC10aGVtb3ZpZS5jb20vIiwiUmVzcG9uc2UiOiJUcnVl
+        In0=
     http_version: 
-  recorded_at: Fri, 18 Apr 2014 00:44:54 GMT
+  recorded_at: Sat, 19 Apr 2014 03:25:19 GMT
 - request:
     method: get
-    uri: http://omdbapi.com/?i=tt1231230123
+    uri: http://omdbapi.com/?i=tt1231230123&tomatoes=true
     body:
       encoding: US-ASCII
       string: ''
@@ -421,14 +519,14 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Fri, 18 Apr 2014 00:44:49 GMT
+      - Sat, 19 Apr 2014 03:25:15 GMT
       Content-Length:
       - '48'
     body:
       encoding: UTF-8
       string: "{\"Response\":\"False\",\"Error\":\"Incorrect IMDb ID\"}"
     http_version: 
-  recorded_at: Fri, 18 Apr 2014 00:44:54 GMT
+  recorded_at: Sat, 19 Apr 2014 03:25:19 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?s=Star%20Wars
@@ -464,7 +562,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Fri, 18 Apr 2014 00:44:49 GMT
+      - Sat, 19 Apr 2014 03:25:16 GMT
       Content-Length:
       - '1009'
     body:
@@ -494,7 +592,7 @@ http_interactions:
         YXkgU3BlY2lhbCIsIlllYXIiOiIxOTc4IiwiaW1kYklEIjoidHQwMTkzNTI0
         IiwiVHlwZSI6Im1vdmllIn1dfQ==
     http_version: 
-  recorded_at: Fri, 18 Apr 2014 00:44:54 GMT
+  recorded_at: Sat, 19 Apr 2014 03:25:20 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?s=Star%20Wars:%20Episode%20VI%20-%20Return%20of%20the%20Jedi
@@ -530,14 +628,14 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Fri, 18 Apr 2014 00:44:49 GMT
+      - Sat, 19 Apr 2014 03:25:17 GMT
       Content-Length:
       - '117'
     body:
       encoding: UTF-8
       string: "{\"Search\":[{\"Title\":\"Star Wars: Episode VI - Return of the Jedi\",\"Year\":\"1983\",\"imdbID\":\"tt0086190\",\"Type\":\"movie\"}]}"
     http_version: 
-  recorded_at: Fri, 18 Apr 2014 00:44:54 GMT
+  recorded_at: Sat, 19 Apr 2014 03:25:20 GMT
 - request:
     method: get
     uri: http://omdbapi.com/?s=lsdfoweirjrpwef323423dsfkip
@@ -573,12 +671,12 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Date:
-      - Fri, 18 Apr 2014 00:44:49 GMT
+      - Sat, 19 Apr 2014 03:25:17 GMT
       Content-Length:
       - '47'
     body:
       encoding: UTF-8
       string: "{\"Response\":\"False\",\"Error\":\"Movie not found!\"}"
     http_version: 
-  recorded_at: Fri, 18 Apr 2014 00:44:54 GMT
+  recorded_at: Sat, 19 Apr 2014 03:25:21 GMT
 recorded_with: VCR 2.9.0

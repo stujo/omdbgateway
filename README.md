@@ -1,13 +1,17 @@
-# omdbgateway
+#omdbgateway
 
 [![Gem Version](https://badge.fury.io/rb/omdbgateway.svg)](http://badge.fury.io/rb/omdbgateway)
 
 [![Build Status](https://travis-ci.org/stujo/omdbgateway.svg?branch=master)](https://travis-ci.org/stujo/omdbgateway)
 
-__Note__ is a faraday rewrite of [Casey Scarborough's omdbapi](https://github.com/caseyscarborough/omdbapi)
+[![Code Climate](https://codeclimate.com/github/stujo/omdbgateway.png)](https://codeclimate.com/github/stujo/omdbgateway)
 
-Not that there's anything wrong with what he did, I just wanted to try faraday and we're using OMDB
-in our class
+#Overview
+A Service Gateway to the omdb api. Adds support for failure or success detection, query simplification
+
+For the full format of the Hashes returned by this api please review the source documenation here: [http://www.omdbapi.com/](http://www.omdbapi.com/)
+
+The plan is to support caching via the faraday stack but this is not implemented yet
 
 
 #Installation
@@ -28,16 +32,29 @@ gem "omdbgateway"
 
 #Usage
 
+
 ##Title Search
 
-Returns a single item (chosen by OMDB) as a Hash
+Returns a OMDBGateway::ResponseWrapper for a single item (chosen by OMDB) as a Hash
+
+```
+    # Retrieves a single movie or show based on its title.
+    #
+    # @param title [String] The title of the movie or show.
+    # @param year [String] The year of the movie or show.
+    # @param full_plot [Boolean] Full Plot data (default: false)
+    # @return [Hash]
+    # @example
+    #   title_search('Game of Thrones')
+    def title_search(title, year = nil, full_plot = false, tomatoes = false)
+
+```
+
+
 
 ```
 
 require 'omdbgateway'
-
-OMDBGateway.gateway.title_search('Star Wars')
- => #<OMDBGateway::ResponseWrapper:0x00000101ca5218 @http_status=200, @body={"Title"=>"Star Wars", "Year"=>"1983", "Rated"=>"N/A", "Released"=>"01 May 1983", "Runtime"=>"N/A", "Genre"=>"Action, Adventure, Sci-Fi", "Director"=>"N/A", "Writer"=>"N/A", "Actors"=>"Harrison Ford, Alec Guinness, Mark Hamill, James Earl Jones", "Plot"=>"N/A", "Language"=>"English", "Country"=>"USA", "Awards"=>"N/A", "Poster"=>"N/A", "Metascore"=>"N/A", "imdbRating"=>"7.3", "imdbVotes"=>"292", "imdbID"=>"tt0251413", "Type"=>"game", "Response"=>"True"}, app_failedfalse
 
 OMDBGateway.gateway.title_search('Star Wars').body
  => {"Title"=>"Star Wars", "Year"=>"1983", "Rated"=>"N/A", "Released"=>"01 May 1983", "Runtime"=>"N/A", "Genre"=>"Action, Adventure, Sci-Fi", "Director"=>"N/A", "Writer"=>"N/A", "Actors"=>"Harrison Ford, Alec Guinness, Mark Hamill, James Earl Jones", "Plot"=>"N/A", "Language"=>"English", "Country"=>"USA", "Awards"=>"N/A", "Poster"=>"N/A", "Metascore"=>"N/A", "imdbRating"=>"7.3", "imdbVotes"=>"292", "imdbID"=>"tt0251413", "Type"=>"game", "Response"=>"True"}
@@ -50,9 +67,21 @@ OMDBGateway.gateway.title_search('Star Wars').body.class
 
 ##Free Text Search
 
-Returns an array of items (chosen by OMDB) as Hashes
+Returns a OMDBGateway::ResponseWrapper for an array of items (order chosen by OMDB) based on your search as Hashes
 
 each with Title, Year, imdbID and Type fields
+
+```
+    # Retrieves a movie or show based on its title.
+    #
+    # @param q [String] The search string
+    # @return [Array of Hashes]
+    # @example
+    #   free_search('Game')
+    def free_search(q)
+    
+```
+
 
 ```
 
@@ -108,7 +137,20 @@ OMDBGateway.gateway.free_search('Jedi').body
 
 ## Find By Id
 
-Returns a single item as a Hash with all available fields
+Returns a OMDBGateway::ResponseWrapper for a single movie as a Hash with all available fields
+
+```
+
+    # Retrieves a movie or show based on its IMDb ID.
+    #
+    # @param imdb_id [String] The IMDb ID of the movie or show.
+    # @param full_plot [Boolean] Full Plot data (default: false)
+    # @return [Hash]
+    # @example
+    #   find_by_id('tt0944947')
+    def find_by_id(imdb_id, full_plot = false, tomatoes = true)
+
+```
 
 
 ```
@@ -249,3 +291,8 @@ OMDBGateway.gateway.free_search('Jedi').prune_array(1).prune_hash('Axiom', 123).
  => 123
 
 ```
+
+#History
+__Note__ is a faraday rewrite of [Casey Scarborough's omdbapi](https://github.com/caseyscarborough/omdbapi)
+
+Not that there's anything wrong with what he did, I just wanted to try faraday and we're using OMDB in our class
